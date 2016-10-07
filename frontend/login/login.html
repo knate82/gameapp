@@ -1,0 +1,53 @@
+<div class="container-fluid">
+    <div class="row">
+        <div class="col-xs-12">
+            <h1 style="text-align:center">Game App</h1>
+        </div>
+    </div>
+</div>
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 style="text-align:center">Already a Member?</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <input type="text" placeholder="Username" class="form-control" ng-model="user.userName">
+                        </div>
+                        <div class="col-sm-6">
+                            <input type="password" placeholder="Password" class="form-control" ng-model="user.password">
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <button class="btn btn-default form-control" ng-click="verifyUser()">Login</button>
+                </div>
+            </div>
+        </div>
+        <div class="col-sm-6">
+            <div class="panel panel-default">
+                <div class="panel-heading">
+                    <h3 style="text-align:center">Or, Create an Account</h3>
+                </div>
+                <div class="panel-body">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <input class="form-control" type="text" placeholder="Create a Username" ng-model="newUsername">
+                        </div>
+                        <div class="col-sm-6">
+                            <input class="form-control" type="password" placeholder="Create a Password" ng-model="newPassword">
+                        </div>
+                    </div>
+                </div>
+                <div class="panel-footer">
+                    <button class="btn btn-default form-control" ng-click="createUser(newUsername, newPassword)">Create Account</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+{{data}}
