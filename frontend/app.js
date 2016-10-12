@@ -6,9 +6,13 @@ var app = angular.module("GameApp", ["ngRoute"])
         templateUrl: "./login/login.html",
         controller: "LoginController"
     })
-    .when("/profile/:username", {
-        templateUrl: "./profile/userprofile.html",
-        controller: "UserProfileController"
+    .when("/profile", {
+        templateUrl: "./profile/profile.html",
+        controller: "ProfileController"
+    })
+    .when("/game", {
+        templateUrl: "./game/game.html",
+        controller: "GameController"
     })
     .otherwise("/login", {
         templateUrl: "./login/login.html",

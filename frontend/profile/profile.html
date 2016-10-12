@@ -1,0 +1,53 @@
+<div class="profile-view">
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-xs-12">
+                <h1 style="text-align:center">Welcome {{user.userName}}<br>
+            <small>To The Game App</small></h1>
+            </div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-6">
+                <div class="panel panel-info">
+                    <div class="panel-heading">
+                        <h3 style="text-align:center">High Scores</h3>
+                    </div>
+                    <div class="panel-body">
+                        <div class="row">
+                            <div class="col-xs-6">
+                                <h5 style="text-align:center">User Name:</h5>
+                            </div>
+                            <div class="col-xs-6">
+                                <h5 style="text-align:center">Score:</h5>
+                            </div>
+                        </div>
+                        <div class="row">
+                            <div ng-repeat="scores in highScores">
+                                <div ng-repeat="score in scores | orderBy : '-score'">
+                                    <div class="col-xs-6">
+                                        <p style="text-align:center"><strong>{{score.userName.userName}}</strong></p>
+                                    </div>
+                                    <div class="col-xs-6">
+                                        <p style="text-align:center"><strong>{{score.score}}</strong></p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="panel-footer">
+                        <h5 style="text-align:center">Get On The Board!</h5>
+                    </div>
+                </div>
+            </div>
+            <div class="col-sxs-6">
+                <div class="row">
+                    <div class="col-xs-6">
+                        <button class="btn btn-success form-control" ng-click="playGame()">Play Now</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

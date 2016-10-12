@@ -17,8 +17,9 @@ angular.module("GameApp")
         AuthService.verifyUser($scope.user).then(function(response){
             console.log(response);
             if(response != null){
-//                UserService.user = response;
-                $location.path("#/profile");
+                UserService.user = response;
+                UserService.isLoggedIn = true;
+                $location.path("/profile");
             }
         })
     }
