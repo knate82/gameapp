@@ -1,0 +1,47 @@
+canvas {
+    margin-left: 13vw;
+    margin-top: 10vh;
+}
+
+.game-view {
+    background-color: black;
+    height: 100vh;
+    width: 100vw;
+    overflow: scroll;
+}
+
+.game-view h1 {
+    color: yellow;
+}
+
+.login-view {
+    background-image: url(images/loginbackgroundimage2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100vw;
+}
+
+.login-view h1 {
+    color: yellow;
+    font-size: 5em;
+    text-shadow: 2px 5px 5px black;
+}
+
+.profile-view {
+    background-image: url(images/loginbackgroundimage2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+    height: 100vh;
+    width: 100vw;
+}
+
+.profile-view h1 {
+    color: yellow;
+    font-size: 5em;
+    text-shadow: 2px 5px 5px black;
+}

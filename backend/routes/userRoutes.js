@@ -1,6 +1,6 @@
 var express = require("express");
 var userRoute = express.Router();
-var User = require("../models/userSchema");
+var User = require("../models/userschema");
 
 userRoute.route("")
 //.get(function(req, res){

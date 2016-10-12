@@ -11,11 +11,11 @@ var userSchema = new Schema({
     password: {
         type: String,
         required: true
-    }
-//    scores: [{
-//        type: Schema.Types.ObjectId,
-//        ref: "scores"
-//    }]
+    },
+    scores: [{
+        type: Schema.Types.ObjectId,
+        ref: "scores"
+    }]
 });
 
 module.exports = mongoose.model("user", userSchema);

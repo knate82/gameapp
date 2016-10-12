@@ -16,7 +16,7 @@ app.use(logger("dev"));
 app.use(bodyParser.json());
 
 app.use("/user", userRoutes);
-//app.use("/scoresRoutes", scoresRoutes);
+app.use("/scores", scoresRoutes);
 
 
 app.listen(3000, function(){
