@@ -1,7 +1,7 @@
 angular.module("GameApp")
 
 .service("AuthService",["$http", function($http){
-    var backend = ("http://localhost:3000/user/");
+    var backend = ("/user/");
     
     this.verifyUser = function(user){
         return $http.post(backend + "login", user).then(function(response){

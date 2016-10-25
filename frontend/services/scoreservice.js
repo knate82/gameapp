@@ -1,7 +1,7 @@
 angular.module("GameApp")
 
 .service("ScoreService", ["$http", function($http){
-    var backend = "http://localhost:3000/scores"
+    var backend = "/scores"
     
     this.getScores = function(){
         return $http.get(backend).then(function(response){
