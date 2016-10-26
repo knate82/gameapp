@@ -56,6 +56,10 @@ angular.module("GameApp")
         },
         stop: function () {
             clearInterval(this.interval);
+        },
+        resetGame: function (){
+            that.myObstacle = [];
+            that.myGamePiece;
         }
     }
     
@@ -155,6 +159,7 @@ angular.module("GameApp")
                 that.backgroundMusic.stop();
                 that.explosion.play();
                 that.myGameArea.stop();
+                that.myGameArea.resetGame();
                 that.logScore();
                 return;
             }
