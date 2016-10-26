@@ -25,7 +25,7 @@
                         </div>
                         <div class="row">
                             <div ng-repeat="scores in highScores">
-                                <div ng-repeat="score in scores | orderBy : '-score'">
+                                <div ng-repeat="score in scores | orderBy : '-score' | limitTo: 10">
                                     <div class="col-xs-6">
                                         <p style="text-align:center"><strong>{{score.userName.userName}}</strong></p>
                                     </div>
